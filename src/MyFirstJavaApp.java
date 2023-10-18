@@ -28,12 +28,12 @@ public class MyFirstJavaApp {
         char energyEfficiencyCategory = 'G';
 
         System.out.println("2018 Dodge Challenger SRT 392");
-        System.out.println("Price: $" + price + "Dollars");
+        System.out.println("Price: $" + price + " Dollars");
         System.out.println("Mileage: " + mileage + "KM");
         System.out.println("The car is Damaged: " + isDamaged);
         System.out.println("Registration number: " + registrationNumber);
         System.out.println("Cubic capacity: " + cubicCapacity + "ccm");
-        System.out.println("Power: " + kwPower + "kW(" + horsePower + " bhp)");
+        System.out.println("Power: " + kwPower + "kW (" + horsePower + " bhp)");
         System.out.println("CO2 Emission: " + co2Emissions + "g/km");
         System.out.println("Fuel consumption: " + "Combined - " + fuelConsumptionCombined + consumptionValue + ", Urban - " + fuelConsumptionUrban + consumptionValue + ", Extra urban - " + fuelConsumptionExtraUrban + consumptionValue);
 
