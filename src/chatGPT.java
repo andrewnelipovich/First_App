@@ -5,7 +5,7 @@ public class chatGPT {
             Scanner scanner = new Scanner(System.in);
 
             // Prompt the user for input
-            System.out.print("Enter a value: ");
+            System.out.print("Entera value: ");
 
             // Read the user's input as a string
             String userInput = scanner.nextLine();
