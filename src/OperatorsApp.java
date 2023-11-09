@@ -8,8 +8,8 @@ public class OperatorsApp {
 
         System.out.println("Price of a " + carModel + " = " + price);
 
-        int inreasedPrice = price + 1000;
-        System.out.println("Increased price of a " + carModel + " = " + inreasedPrice); //First comment
+        int increasedPrice = price + 1000;
+        System.out.println("Increased price of a " + carModel + " = " + increasedPrice); //First comment
 
         int decreasedPrice = price - 1000;
         System.out.println("Decreased price of a " + carModel + " = " + decreasedPrice);
