@@ -23,5 +23,19 @@ public class OperatorsApp {
 
         int moneyLeft = moneyInBank % price;
         System.out.println("After purchase of " + youCanAfford + " " + carModel + " left " + moneyLeft);
+
+        int priceNegative = -14000;
+        int priceNegativeWithPlusSign = +priceNegative;
+        System.out.println("Negative price with plus sign: " + priceNegativeWithPlusSign);
+        int priceNegativeWithMinusSign = -priceNegative;
+        System.out.println("Negative price with minus sign: " + priceNegativeWithMinusSign);
+
+        System.out.println("Car's price equals money: " + (price == moneyInBank));
+        System.out.println("Car's price does not equal money: " + (price != moneyInBank));
+        System.out.println("Car's price is greater than money: " + (price > moneyInBank));
+        System.out.println("Car's price is less than money: " + (price < moneyInBank));
+        System.out.println("Car's price is greater than or equals money: " + (price >= moneyInBank));
+        System.out.println("Car's price is less or equals than money: " + (price <= moneyInBank));
+
     }
 }
