@@ -4,7 +4,7 @@ public class OperatorsApp {
         String carModel = "Dodge Challenger";
         int price = 14000;
         int moneyInBank = 50000;
-        boolean isDamaged = true;
+        boolean isDamaged = false;
 
         System.out.println("Price of a " + carModel + " = " + price);
 
@@ -37,5 +37,24 @@ public class OperatorsApp {
         System.out.println("Car's price is greater than or equals money: " + (price >= moneyInBank));
         System.out.println("Car's price is less or equals than money: " + (price <= moneyInBank));
 
+        String damagedText = isDamaged ? "The car is damaged" : "The car is not damaged";
+        System.out.println(damagedText);
+
+        String worthSeeingText = !isDamaged || price <= 20000 ? "Worth" : "Not worth";
+        System.out.println(worthSeeingText);
+
+        String worthRepairingText = isDamaged && price <= 20000 ? "To repair" : "Not to repair";
+        System.out.println(worthRepairingText);
+
+        price += 1000;
+        System.out.println("Price increased: " + price);
+        price -= 2000;
+        System.out.println("Price decreased: " + price);
+        price *= 2;
+        System.out.println("Price multiplied: " + price);
+        price /= 2;
+        System.out.println("Price divided: " + price);
+        price %= 10000;
+        System.out.println("Price remained:" + price);
     }
 }
