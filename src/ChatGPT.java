@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class chatGPT {
+public class ChatGPT {
         public static void main(String[] args) {
             // Create a Scanner object to read user input
             Scanner scanner = new Scanner(System.in);
