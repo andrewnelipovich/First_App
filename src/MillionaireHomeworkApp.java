@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class MillionaireHomeworkApp {
     public static void main(String[] args) {
-
         char correctAnswer = 'c';
 
-        System.out.println("Who invented light bolb? \na.Him \nb.Her \nc.Thomas \nd.They");
+        System.out.println("Who invented the light bolb? \na.Him \nb.Her \nc.Thomas \nd.They");
 
         Scanner inputText = new Scanner(System.in);
 
