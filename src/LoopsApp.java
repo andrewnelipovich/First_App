@@ -5,24 +5,21 @@ public class LoopsApp {
            System.out.println(i + " Being right sucks");
            i++;
        }
-        System.out.println("Value of i is " + i);
-        System.out.println();
+        System.out.println("Value of i is " + i + "\n");
 
        int j = 5;
        do {
            System.out.println(j + " Being right sucks");
            j++;
        } while (j <= 0);
-        System.out.println("Value of j is " + j);
-        System.out.println();
+        System.out.println("Value of j is " + j + "\n");
 
         for (int k = 1; k <= j; k++) {
             if (k == 3) {
                 break;
             }
-            System.out.println("Value of k is " + k);
+            System.out.println("Value of k is " + k + "\n");
         }
-        System.out.println();
 
         for (int k = 1; k <= 5; k++) {
             for (int l = 1; l <= 2; l++) {
