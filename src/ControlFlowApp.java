@@ -31,9 +31,15 @@ public class ControlFlowApp {
                 System.out.println("High energy");
                 break;
             default:
-                System.out.println("Consumption unknown");
+                System.out.println("Consumption unknown" + "\n");
         }
 
-
+        {
+            int number = 5;
+            {
+                number++;
+            }
+            System.out.println("Number: " + number);
+        }
     }
 }
