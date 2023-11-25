@@ -19,9 +19,10 @@ public class ArraysApp {
                 {15,24,3,40,56}
         };
         for (int i = 0; i < weeklyLotteryNumbers.length; i++) {
-            for (int j = 0; j < weeklyLotteryNumbers[i]; j++) {
-
+            for (int j = 0; j < weeklyLotteryNumbers[i].length; j++) {
+                System.out.print(weeklyLotteryNumbers[i][j] + " ");
             }
+            System.out.println();
         }
     }
 }
