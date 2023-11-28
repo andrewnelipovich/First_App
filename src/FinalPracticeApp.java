@@ -1,18 +1,28 @@
+
 public class FinalPracticeApp {
     public static void main(String[] args) {
         String name = "Michael Fassbender";
-        String dateOfBirth = "April 2, 1977";
+        int yearOfBirth = 1977;
+        int currentYear = 2023;
 
-        String[] movieTitles = new String[3];
-        movieTitles[0] = "Shame";
-        movieTitles[1] = "Prometheus";
-        movieTitles[2] = "X-Men: First Class";
+        System.out.println("Name: " + name + " \nAge: " + (currentYear - yearOfBirth));
 
-        double[] movieRatings = new double[3];
-        movieRatings[0] = 7.2;
-        movieRatings[1] = 7.0;
-        movieRatings[2] = 7.7;
+        String[] movieTitles = {"Shame", "Prometheus", "X-Men: First Class"};
+        double[] movieRatings = {7.2, 7.0, 4.7};
 
-
+        System.out.println("Movies: ");
+        for (int i = 0; i < movieTitles.length; i++) {
+            System.out.println("Title: " + movieTitles[i] + ", Rating: " + getRating(movieRatings[i]));
+        }
     }
-}
+
+    static String getRating (double rating){
+        if (rating <= 5.0){
+            return "Bad";
+        } else if (rating >5.1 && rating <=8.0) {
+            return "Good";
+        } else {
+            return "Excellent";
+        }
+    }
+    }
