@@ -1,3 +1,5 @@
+package beginner;
+
 public class MyFirstJavaApp {
     public static void main(String[] args) {
         byte numberOfSeats = 5;
