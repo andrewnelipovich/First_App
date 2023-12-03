@@ -1,3 +1,5 @@
+package beginner;
+
 public class HomeworkPrimitivesAmazon {
     public static void main (String[] args) {
         String title = "Glass";

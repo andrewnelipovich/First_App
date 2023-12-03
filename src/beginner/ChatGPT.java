@@ -1,3 +1,5 @@
+package beginner;
+
 import java.util.Scanner;
 public class ChatGPT {
         public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package beginner;
+
 public class FunctionsAppHomework {
     public static void main(String[] args) {
         System.out.println(getEnergyConsumption('f'));
