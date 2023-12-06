@@ -3,28 +3,37 @@ package intermediate.classesandobjects;
 import java.util.Random;
 
 public class DodgeChallenger {
+
     byte numberOfSeats = 5;
     byte numberOfDoors = 3;
     byte numberOfVehicleOwners = 1;
     byte emissionSticker = 4;
+
     short kwPower = 362;
     short horsePower = 460;
     short co2Emissions = 333;
     short cubicCapacity = 6500;
+
     int price = 30000;
-    int mileage = 14000;
+    private int mileage = 14000;
+
     long registrationNumber = 12345623443234789L;
+
     float fuelConsumptionCombined = 15.5F;
     float fuelConsumptionUrban = 20.5F;
     float fuelConsumptionExtraUrban = 10.5F;
+
     double fuelConsumptionPreciseAverage = 1.51234545123234e1;
+
     String consumptionValue = "l/km";
+
     boolean isDamaged = true;
+
     char energyEfficiencyCategory = 'G';
 
     String color;
-    DodgeChallenger(String color, String consumptionValue, byte numberOfVehicleOwners, short horsePower,
-                    short cubicCapacity, int price, boolean isDamaged){
+    public DodgeChallenger(String color, String consumptionValue, byte numberOfVehicleOwners, short horsePower,
+                    short cubicCapacity, int price, boolean isDamaged, int mileage){
         this.color = color;
         this.consumptionValue = consumptionValue;
         this.numberOfVehicleOwners = numberOfVehicleOwners;
@@ -32,6 +41,7 @@ public class DodgeChallenger {
         this.cubicCapacity = cubicCapacity;
         this.price = price;
         this.isDamaged = isDamaged;
+        this.mileage = mileage;
         Random randomNumber = new Random();
         this.registrationNumber = randomNumber.nextLong();
     }

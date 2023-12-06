@@ -8,7 +8,7 @@ public class CarsApp {
 //        System.out.println();
 
         DodgeChallenger orangeDodge = new DodgeChallenger("green", ", l/km", (byte)3,
-                (short)300, (short)492, 33333, false);
+                (short)300, (short)492, 33333, false, 99999);
         orangeDodge.getDescription();
     }
 }
