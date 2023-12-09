@@ -1,4 +1,4 @@
-package intermediate;
+package intermediate.classesandobjects;
 
 import java.util.Random;
 

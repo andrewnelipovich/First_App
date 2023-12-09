@@ -1,6 +1,6 @@
 package beginner;
 
-import intermediate.classesandobjects.DodgeChallenger;
+import intermediate.inheritance.car.DodgeChallenger;
 
 public class MyFirstJavaApp {
     public static void main(String[] args) {
@@ -50,7 +50,7 @@ public class MyFirstJavaApp {
         byte newPower = (byte) horsePower;
         System.out.println("The value of new power: " + newPower);
 
-        DodgeChallenger orangeDodge = new DodgeChallenger("green", ", l/km", (byte)3,
+        DodgeChallenger orangeDodge = new DodgeChallenger("Dodge Challenger", "green", ", l/km", (byte)3,
                 (short)300, (short)492, 33333, false, 99999);
     }
 }

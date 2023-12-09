@@ -1,6 +1,6 @@
-package intermediate;
+package intermediate.inheritance.athlete;
 
-public class BasketballApp {
+public class AthleteApp {
     public static void main(String[] args) {
 
         BasketballPlayer kobe = new BasketballPlayer("Korben", "kobe", 1980,
@@ -19,11 +19,22 @@ public class BasketballApp {
         basketballPlayers[2] = jonson;
 
         for (BasketballPlayer someVariable : basketballPlayers){
-            someVariable.getFreeThrowPercentage();
+            System.out.println();
+            someVariable.getBio();
         }
 
-//        kobe.getFreeThrowPercentage();
-//        jordan.getFreeThrowPercentage();
-//        jonson.getFreeThrowPercentage();
+        FootballPlayer tom = new FootballPlayer("Tom", "test", 1996, "fuuu",
+                55, 30, 20);
+        FootballPlayer ed = new FootballPlayer("ED", "erg", 1898, "rg",
+                55, 30, 20);
+
+        FootballPlayer[] footballPlayers = new FootballPlayer[2];
+        footballPlayers[0] = tom;
+        footballPlayers[1] = ed;
+
+        for (FootballPlayer footballPlayer : footballPlayers){
+            System.out.println();
+            footballPlayer.getBio();
+        }
     }
 }
