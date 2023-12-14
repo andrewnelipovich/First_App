@@ -1,9 +1,8 @@
-package intermediate.classesandobjects;
+package intermediate.inheritance.car;
 
 import java.util.Random;
 
-public class DodgeChallenger {
-
+public class Car {
     byte numberOfSeats = 5;
     byte numberOfDoors = 3;
     byte numberOfVehicleOwners = 1;
@@ -31,9 +30,13 @@ public class DodgeChallenger {
 
     char energyEfficiencyCategory = 'G';
 
-    String color;
-    public DodgeChallenger(String color, String consumptionValue, byte numberOfVehicleOwners, short horsePower,
-                    short cubicCapacity, int price, boolean isDamaged, int mileage){
+    private String color;
+
+    private String carName;
+
+    public Car(String carName, String color, String consumptionValue, byte numberOfVehicleOwners, short horsePower,
+                           short cubicCapacity, int price, boolean isDamaged, int mileage){
+        this.carName = carName;
         this.color = color;
         this.consumptionValue = consumptionValue;
         this.numberOfVehicleOwners = numberOfVehicleOwners;
@@ -51,7 +54,7 @@ public class DodgeChallenger {
     }
 
     public void getDescription(){
-        System.out.println("2018 Dodge Challenger SRT 392");
+        System.out.println(carName);
         System.out.println("Price: $" + price + " Dollars");
         System.out.println("Mileage: " + mileage + "KM");
         System.out.println("The car is Damaged: " + isDamaged);

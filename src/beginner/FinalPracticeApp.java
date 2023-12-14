@@ -15,6 +15,9 @@ public class FinalPracticeApp {
         for (int i = 0; i < movieTitles.length; i++) {
             System.out.println("Title: " + movieTitles[i] + ", Rating: " + getRating(movieRatings[i]));
         }
+
+//        HomeworkPrimitivesAmazon exampleObject = new HomeworkPrimitivesAmazon("wef", 2.5F,10.6F, (short) 90, (byte) 5, 4000);
+//        exampleObject.getOpinion((short)80);
     }
 
     static String getRating (double rating){
@@ -26,4 +29,4 @@ public class FinalPracticeApp {
             return "Excellent";
         }
     }
-    }
+}

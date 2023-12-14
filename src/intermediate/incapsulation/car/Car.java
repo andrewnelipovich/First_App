@@ -1,9 +1,8 @@
-package intermediate.classesandobjects;
+package intermediate.incapsulation.car;
 
 import java.util.Random;
 
-public class DodgeChallenger {
-
+public class Car {
     byte numberOfSeats = 5;
     byte numberOfDoors = 3;
     byte numberOfVehicleOwners = 1;
@@ -14,7 +13,7 @@ public class DodgeChallenger {
     short co2Emissions = 333;
     short cubicCapacity = 6500;
 
-    int price = 30000;
+    private int price = 30000;
     private int mileage = 14000;
 
     long registrationNumber = 12345623443234789L;
@@ -31,9 +30,12 @@ public class DodgeChallenger {
 
     char energyEfficiencyCategory = 'G';
 
-    String color;
-    public DodgeChallenger(String color, String consumptionValue, byte numberOfVehicleOwners, short horsePower,
-                    short cubicCapacity, int price, boolean isDamaged, int mileage){
+    private String color;
+    private String carName;
+
+    public Car(String carName, String color, String consumptionValue, byte numberOfVehicleOwners, short horsePower,
+                           short cubicCapacity, int price, boolean isDamaged, int mileage){
+        this.carName = carName;
         this.color = color;
         this.consumptionValue = consumptionValue;
         this.numberOfVehicleOwners = numberOfVehicleOwners;
@@ -51,7 +53,7 @@ public class DodgeChallenger {
     }
 
     public void getDescription(){
-        System.out.println("2018 Dodge Challenger SRT 392");
+        System.out.println(carName);
         System.out.println("Price: $" + price + " Dollars");
         System.out.println("Mileage: " + mileage + "KM");
         System.out.println("The car is Damaged: " + isDamaged);
@@ -61,4 +63,25 @@ public class DodgeChallenger {
         System.out.println("CO2 Emission: " + co2Emissions + "g/km");
         System.out.println("Fuel consumption: " + "Combined - " + fuelConsumptionCombined + consumptionValue + ", Urban - " + fuelConsumptionUrban + consumptionValue + ", Extra urban - " + fuelConsumptionExtraUrban + consumptionValue);
     }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = Math.abs(price);
+    }
+
+    public int getMileage() {
+        return mileage;
+    }
+
+    public void drive(int mileage){
+        this.mileage += Math.abs(mileage);
+    }
+
+    public String getCarName() {
+        return carName;
+    }
+
 }
