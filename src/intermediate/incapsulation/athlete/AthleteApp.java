@@ -34,6 +34,7 @@ public class AthleteApp {
 
         for (FootballPlayer footballPlayer : footballPlayers){
             System.out.println();
+            footballPlayer.playGame();
             footballPlayer.getBio();
         }
     }

@@ -13,7 +13,7 @@ public class Car {
     short co2Emissions = 333;
     short cubicCapacity = 6500;
 
-    int price = 30000;
+    private int price = 30000;
     private int mileage = 14000;
 
     long registrationNumber = 12345623443234789L;
@@ -31,7 +31,6 @@ public class Car {
     char energyEfficiencyCategory = 'G';
 
     private String color;
-
     private String carName;
 
     public Car(String carName, String color, String consumptionValue, byte numberOfVehicleOwners, short horsePower,
@@ -64,4 +63,25 @@ public class Car {
         System.out.println("CO2 Emission: " + co2Emissions + "g/km");
         System.out.println("Fuel consumption: " + "Combined - " + fuelConsumptionCombined + consumptionValue + ", Urban - " + fuelConsumptionUrban + consumptionValue + ", Extra urban - " + fuelConsumptionExtraUrban + consumptionValue);
     }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = Math.abs(price);
+    }
+
+    public int getMileage() {
+        return mileage;
+    }
+
+    public void drive(int mileage){
+        this.mileage += Math.abs(mileage);
+    }
+
+    public String getCarName() {
+        return carName;
+    }
+
 }
